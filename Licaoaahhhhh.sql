@@ -1,7 +1,7 @@
 -- licao 1
 insert into estado (SGESTADO, NMESTADO) VALUES ('SP', 'São Paulo'), ('RJ', 'Rio de Janeiro');
 -- licao 2
-insert into cidade(CDCIDADE,NMCIDADE,SGESTADO) VALUES (1,'São Paulo','SP'),(2,'Santo André','SP'),(3,'Campinas','SP'),(4,'Rio de Janeiro','RJ'),(5,'Niterói','RJ');
+insert into cidade(CDCIDADE,NMCIDADE,SGESTADO) VALUES (1,'São Paulo','SP'),(2,'Santo André','SP'),(3,'Campinas','SP'),(1,'Rio de Janeiro','RJ'),(2,'Niterói','RJ');
 -- licao 3
 insert into bairro(CDBAIRRO,NMBAIRRO,CDCIDADE,SGESTADO) VALUES (1,'Jardins',1,'SP'),(2,'Morumbi',1,'SP'),(3,'Aeroporto',1,'SP'),(1,'Aeroporto',1,'RJ'),(2,'Flamengo',1,'RJ');
 -- licao 4
@@ -41,7 +41,7 @@ SET VLPRECO = VLPRECO * 0.95
 WHERE CDVENDEDOR = 1;
 -- licao 10
 UPDATE oferta
-SET VLPRECO = VLPRECO * 1.05
+SET VLOFERTA = VLOFERTA * 1.05
 WHERE CDCOMPRADOR = 2;
 -- licao 11
 UPDATE comprador
